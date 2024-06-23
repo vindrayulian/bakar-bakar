@@ -392,13 +392,14 @@ img {
 
 /* ======= Gallery ======== */
 .gallery__container{
-  padding-top: 2rem;
-  display: flex;
+  padding-top: 7.5rem;
+  height: 100vh;
+  display: grid;
   grid-template-rows: max-content 320px;
   row-gap: 2rem;
   border: 1px solid var(--black-color);
   border-radius: 10px;
-  align-items: center;
+  margin-top: 30rem;
 }
 
 .gallery__data{
