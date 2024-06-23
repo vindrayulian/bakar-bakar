@@ -13,6 +13,10 @@
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
+      <!-- countdown -->
+       <!-- <link rel="stylesheet" href="assets/css/simplyCountdown.theme.default.css"> -->
+       <script src="assets/js/simplyCountdown.min.js"></script>
+
       <title>Yuk Gas Bakar-Bakar</title>
    </head>
    <body>
@@ -102,7 +106,7 @@
                      Acara ini gak cuma sekedar bakar-bakar biasa, tapi juga ajang buat kita ngobrol, ketawa, dan mengenang masa-masa kocak waktu di MTS. Bayangin, sambil bakar-bakar kita bisa cerita-cerita lucu, update kabar, dan tentunya bikin kenangan baru yang seru abis.
                      <br>
                      <br>
-                     Jadi, jangan sampai ketinggalan ya! Tinggalin dulu kesibukan kalian dan datang ke acara kita. Kita pengen banget ketemu kalian semua, berbagi cerita, dan pastinya seru-seruan bareng lagi. Kehadiran kalian bakal bikin acara ini makin asik dan berkesan. Ayo, datang dan bikin momen reuni ini jadi spesial dan gak terlupakan.
+                     Jadi, jangan sampai ketinggalan ya! <span style="font-size: 1.2rem; font-weight: bold;">Tanggal 2 Juli 2024</span>, Tinggalin dulu kesibukan kalian dan datang ke acara kita. Kita pengen banget ketemu kalian semua, berbagi cerita, dan pastinya seru-seruan bareng lagi. Kehadiran kalian bakal bikin acara ini makin asik dan berkesan. Ayo, datang dan bikin momen reuni ini jadi spesial dan gak terlupakan.
                      <br>
                      <br>
                      Sampai jumpa di "Bakar-Bakar." Yuk kita bikin acara ini jadi kenangan paling keren!
@@ -110,6 +114,7 @@
                      <br>
                      Salam kangen,
                   </p>
+                  <div class="simply-countdown" style="font-size: 2rem; font-weight: bold;"></div>
                </div>
             </div>
          </section>
@@ -157,5 +162,21 @@
       
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
+
+      <script>
+         simplyCountdown('.simply-countdown', {
+            year: 2024, // required
+            month: 7, // required
+            day: 2, // required
+            hours: 15, // Default is 0 [0-23] integer
+            words: { //words displayed into the countdown
+                days: { singular: 'hari', plural: 'hari' },
+                hours: { singular: 'jam', plural: 'jam' },
+                minutes: { singular: 'menit', plural: 'menit' },
+                seconds: { singular: 'detik', plural: 'detik' }
+            },
+            inline: true //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
+         });
+      </script>
    </body>
 </html>
